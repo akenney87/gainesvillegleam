@@ -1,0 +1,13 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main starburst sparkle - clean and modern -->
+  <path d="M24 4V18M24 30V44M4 24H18M30 24H44" stroke="#7C9885" stroke-width="3" stroke-linecap="round"/>
+  <path d="M10 10L17 17M31 31L38 38M38 10L31 17M17 31L10 38" stroke="#7C9885" stroke-width="2" stroke-linecap="round"/>
+  <!-- Center circle -->
+  <circle cx="24" cy="24" r="5" fill="#7C9885"/>
+  <circle cx="24" cy="24" r="2.5" fill="#FFFFFE"/>
+  <!-- Accent dots -->
+  <circle cx="24" cy="8" r="2" fill="#9DB4A4"/>
+  <circle cx="24" cy="40" r="2" fill="#9DB4A4"/>
+  <circle cx="8" cy="24" r="2" fill="#9DB4A4"/>
+  <circle cx="40" cy="24" r="2" fill="#9DB4A4"/>
+</svg>

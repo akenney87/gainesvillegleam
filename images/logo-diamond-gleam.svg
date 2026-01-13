@@ -1,0 +1,13 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Diamond shape -->
+  <path d="M24 6L42 24L24 42L6 24L24 6Z" stroke="#7C9885" stroke-width="2.5" fill="none"/>
+  <!-- Inner facet lines -->
+  <path d="M24 6L18 24L24 42" stroke="#7C9885" stroke-width="1.5" opacity="0.5"/>
+  <path d="M24 6L30 24L24 42" stroke="#7C9885" stroke-width="1.5" opacity="0.5"/>
+  <path d="M6 24H42" stroke="#7C9885" stroke-width="1.5" opacity="0.5"/>
+  <!-- Gleam highlight -->
+  <path d="M24 2L25.5 5L29 6L25.5 7L24 10L22.5 7L19 6L22.5 5L24 2Z" fill="#7C9885"/>
+  <!-- Corner sparkles -->
+  <circle cx="42" cy="12" r="1.5" fill="#9DB4A4"/>
+  <circle cx="8" cy="36" r="1.5" fill="#9DB4A4"/>
+</svg>

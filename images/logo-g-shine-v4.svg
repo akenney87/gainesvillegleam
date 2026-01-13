@@ -1,0 +1,6 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Filled G with cutout -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 8C15.163 8 8 15.163 8 24C8 32.837 15.163 40 24 40C32.837 40 40 32.837 40 24H24V30H34C32.5 34.5 28.5 38 24 38C16.268 38 10 31.732 10 24C10 16.268 16.268 10 24 10C28.5 10 32.5 12.5 35 16L36.5 14.5C33.5 10.5 29 8 24 8Z" fill="#7C9885"/>
+  <!-- Corner sparkle -->
+  <path d="M42 6L43.5 10L47.5 11.5L43.5 13L42 17L40.5 13L36.5 11.5L40.5 10L42 6Z" fill="#9DB4A4"/>
+</svg>

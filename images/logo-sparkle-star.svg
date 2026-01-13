@@ -1,0 +1,10 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main 4-point sparkle/star -->
+  <path d="M24 4L27 18.5H41.5L29.5 27L33 41.5L24 32L15 41.5L18.5 27L6.5 18.5H21L24 4Z" fill="#7C9885"/>
+  <!-- Center highlight -->
+  <circle cx="24" cy="22" r="4" fill="#FFFFFE"/>
+  <!-- Small accent sparkles -->
+  <circle cx="38" cy="10" r="2" fill="#9DB4A4"/>
+  <circle cx="10" cy="12" r="1.5" fill="#9DB4A4"/>
+  <circle cx="40" cy="36" r="1.5" fill="#9DB4A4"/>
+</svg>

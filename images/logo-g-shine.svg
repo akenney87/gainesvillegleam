@@ -1,0 +1,9 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stylized G -->
+  <path d="M36 24C36 30.627 30.627 36 24 36C17.373 36 12 30.627 12 24C12 17.373 17.373 12 24 12C27.5 12 30.5 13.5 32.5 15.5" stroke="#7C9885" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 24H26" stroke="#7C9885" stroke-width="4" stroke-linecap="round"/>
+  <!-- Sparkle accent on G -->
+  <path d="M38 8L39.5 12L43.5 13.5L39.5 15L38 19L36.5 15L32.5 13.5L36.5 12L38 8Z" fill="#7C9885"/>
+  <!-- Small sparkle -->
+  <circle cx="10" cy="38" r="2" fill="#9DB4A4"/>
+</svg>
