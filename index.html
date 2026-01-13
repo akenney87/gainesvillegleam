@@ -3,211 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gainesville Gleam - Professional cleaning services in Gainesville, FL. Reliable, thorough, and eco-friendly cleaning for homes and businesses.">
+    <meta name="description" content="Gainesville Gleam - Professional cleaning services in Gainesville, GA. Reliable, thorough, and eco-friendly cleaning for homes and businesses.">
     <title>Gainesville Gleam | Professional Cleaning Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Floating Nav -->
     <nav class="navbar">
-        <div class="container">
+        <div class="nav-inner">
             <a href="#" class="logo">
-                <span class="logo-icon">✨</span>
-                Gainesville Gleam
+                <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="16" cy="10" r="2" fill="currentColor"/>
+                    <circle cx="10" cy="18" r="1.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="22" cy="18" r="1.5" fill="currentColor" opacity="0.6"/>
+                    <circle cx="16" cy="22" r="1" fill="currentColor" opacity="0.4"/>
+                </svg>
+                <span>Gainesville Gleam</span>
             </a>
             <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact" class="btn btn-primary">Get a Quote</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="sparkle-field">
+                <span class="sparkle" style="--x: 15%; --y: 20%; --delay: 0s;"></span>
+                <span class="sparkle" style="--x: 85%; --y: 15%; --delay: 0.5s;"></span>
+                <span class="sparkle" style="--x: 70%; --y: 60%; --delay: 1s;"></span>
+                <span class="sparkle" style="--x: 25%; --y: 70%; --delay: 1.5s;"></span>
+                <span class="sparkle" style="--x: 90%; --y: 80%; --delay: 2s;"></span>
+            </div>
+        </div>
         <div class="container">
-            <div class="hero-content">
-                <h1>A Cleaner Home,<br>A Brighter Day</h1>
-                <p>Professional cleaning services in Gainesville, FL. We bring the sparkle back to your space with reliable, thorough, and eco-friendly cleaning.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg">Get Free Estimate</a>
-                    <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <p class="hero-tag">Professional Cleaning Services</p>
+                    <h1>
+                        <span class="hero-line">Spaces that</span>
+                        <span class="hero-line hero-line-accent">sparkle.</span>
+                    </h1>
+                    <p class="hero-desc">We bring clarity and calm to homes and businesses across Gainesville, GA. Meticulous care, eco-friendly products, lasting freshness.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Book a Cleaning</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#services" class="btn btn-ghost">View Services</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="hero-card-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+                                <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="hero-card-content">
+                            <span class="hero-card-label">Next Available</span>
+                            <span class="hero-card-value">Tomorrow, 9 AM</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive cleaning solutions tailored to your needs</p>
-            </div>
+            <header class="section-intro">
+                <span class="section-tag">What We Do</span>
+                <h2>Cleaning services<br>tailored to you</h2>
+            </header>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Residential Cleaning</h3>
-                    <p>Regular house cleaning, deep cleaning, and move-in/move-out services for homes of all sizes.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Cleaning</h3>
-                    <p>Professional office and business cleaning to maintain a pristine work environment.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">✨</div>
-                    <h3>Deep Cleaning</h3>
-                    <p>Thorough top-to-bottom cleaning for those times when you need an extra sparkle.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📦</div>
-                    <h3>Move In/Out</h3>
-                    <p>Make your transition smooth with our comprehensive moving cleaning services.</p>
-                </div>
+                <article class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3>Residential</h3>
+                        <p>Weekly, bi-weekly, or monthly home cleaning. We handle everything from routine tidying to comprehensive deep cleans.</p>
+                    </div>
+                    <div class="service-visual">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="12" y="24" width="40" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 24l24-12 24 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <rect x="26" y="36" width="12" height="16" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3>Commercial</h3>
+                        <p>Office spaces, retail locations, and professional environments. Flexible scheduling around your business hours.</p>
+                    </div>
+                    <div class="service-visual">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="8" y="16" width="48" height="36" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <line x1="8" y1="28" x2="56" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="16" y="34" width="8" height="8" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="28" y="34" width="8" height="8" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="40" y="34" width="8" height="8" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3>Deep Clean</h3>
+                        <p>Top-to-bottom intensive cleaning. Perfect for spring cleaning, post-renovation, or a fresh start.</p>
+                    </div>
+                    <div class="service-visual">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+                            <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-content">
+                        <h3>Move In/Out</h3>
+                        <p>Transitioning spaces cleaned to perfection. Leave your old place spotless or start fresh in your new one.</p>
+                    </div>
+                    <div class="service-visual">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="14" y="20" width="24" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="26" y="28" width="24" height="28" rx="2" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 2"/>
+                            <path d="M44 36l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About / Trust -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Choose Gainesville Gleam?</h2>
-                    <p>We're not just another cleaning service. We're your partners in creating a healthier, happier living space. Our team is committed to excellence in every detail.</p>
-                    <ul class="features-list">
+            <div class="about-layout">
+                <div class="about-main">
+                    <span class="section-tag">Why Gainesville Gleam</span>
+                    <h2>We believe clean spaces create clarity</h2>
+                    <p class="about-lead">More than just a cleaning service, we're dedicated to transforming your environment into a sanctuary. Every surface, every corner, every detail matters.</p>
+                    <ul class="trust-list">
                         <li>
-                            <span class="feature-check">✓</span>
-                            Fully insured and bonded professionals
+                            <span class="trust-check">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span>Fully insured & background-checked team</span>
                         </li>
                         <li>
-                            <span class="feature-check">✓</span>
-                            Eco-friendly cleaning products
+                            <span class="trust-check">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span>Eco-friendly, non-toxic products</span>
                         </li>
                         <li>
-                            <span class="feature-check">✓</span>
-                            Flexible scheduling options
+                            <span class="trust-check">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span>Flexible scheduling, easy rescheduling</span>
                         </li>
                         <li>
-                            <span class="feature-check">✓</span>
-                            100% satisfaction guarantee
+                            <span class="trust-check">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span>100% satisfaction guarantee</span>
                         </li>
                     </ul>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Happy Clients</span>
+                <aside class="about-stats">
+                    <div class="stat-card stat-card-featured">
+                        <span class="stat-value">500+</span>
+                        <span class="stat-label">Happy clients served</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Years Experience</span>
+                    <div class="stat-card">
+                        <span class="stat-value">5+</span>
+                        <span class="stat-label">Years in business</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Satisfaction Rate</span>
+                    <div class="stat-card">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">Satisfaction rate</span>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
         <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Don't just take our word for it</p>
-            </div>
+            <header class="section-intro section-intro-center">
+                <span class="section-tag">Kind Words</span>
+                <h2>What our clients say</h2>
+            </header>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"Gainesville Gleam transformed my home! Their attention to detail is incredible, and the team is always professional and friendly."</p>
-                    <div class="testimonial-author">
-                        <span class="author-name">Sarah M.</span>
-                        <span class="author-title">Homeowner</span>
+                <blockquote class="testimonial">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"As a property manager, I need reliable cleaners. Gainesville Gleam has never let me down. Highly recommend their move-out cleaning!"</p>
-                    <div class="testimonial-author">
-                        <span class="author-name">James R.</span>
-                        <span class="author-title">Property Manager</span>
+                    <p>"Gainesville Gleam transformed my home. Their attention to detail is incredible, and the team is always professional and friendly. I finally have time to enjoy my weekends."</p>
+                    <footer class="testimonial-footer">
+                        <cite>Sarah M.</cite>
+                        <span>Homeowner, Gainesville</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial testimonial-featured">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p>"Our office has never looked better. The team is thorough, efficient, and always leaves everything spotless. A true gem!"</p>
-                    <div class="testimonial-author">
-                        <span class="author-name">Michelle T.</span>
-                        <span class="author-title">Business Owner</span>
+                    <p>"As a property manager, reliability is everything. Gainesville Gleam has never let me down. Their move-out cleaning service is exceptional—every unit is spotless."</p>
+                    <footer class="testimonial-footer">
+                        <cite>James R.</cite>
+                        <span>Property Manager</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
+                        <svg viewBox="0 0 20 20"><path d="M10 1l2.5 6h6.5l-5 4.5 1.5 6.5-5.5-3.5-5.5 3.5 1.5-6.5-5-4.5h6.5z" fill="currentColor"/></svg>
                     </div>
-                </div>
+                    <p>"Our office has never looked better. The team is thorough, efficient, and always leaves everything immaculate. A true gem for any business."</p>
+                    <footer class="testimonial-footer">
+                        <cite>Michelle T.</cite>
+                        <span>Business Owner</span>
+                    </footer>
+                </blockquote>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="contact-wrapper">
+            <div class="contact-layout">
                 <div class="contact-info">
-                    <h2>Get Your Free Quote</h2>
-                    <p>Ready for a cleaner space? Contact us today for a free, no-obligation estimate.</p>
-                    <div class="contact-details">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2>Ready for a cleaner space?</h2>
+                    <p>Request your free, no-obligation quote. We'll get back to you within 24 hours.</p>
+                    <address class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <span>Gainesville, FL</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                            <span>Gainesville, GA</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📞</span>
-                            <span>(352) 555-GLEAM</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                            <span>(770) 555-GLEAM</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">✉️</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
                             <span>hello@gainesvillegleam.com</span>
                         </div>
-                    </div>
+                    </address>
                 </div>
                 <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service" name="service">
-                            <option value="">Select a service</option>
-                            <option value="residential">Residential Cleaning</option>
-                            <option value="commercial">Commercial Cleaning</option>
-                            <option value="deep">Deep Cleaning</option>
-                            <option value="move">Move In/Out Cleaning</option>
-                        </select>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(770) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" name="service">
+                                <option value="">Select service type</option>
+                                <option value="residential">Residential Cleaning</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="deep">Deep Cleaning</option>
+                                <option value="move">Move In/Out</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your space..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send Request</button>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Request Quote</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -216,32 +348,40 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-layout">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <span class="logo-icon">✨</span>
-                        Gainesville Gleam
+                        <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="16" cy="10" r="2" fill="currentColor"/>
+                            <circle cx="10" cy="18" r="1.5" fill="currentColor" opacity="0.6"/>
+                            <circle cx="22" cy="18" r="1.5" fill="currentColor" opacity="0.6"/>
+                            <circle cx="16" cy="22" r="1" fill="currentColor" opacity="0.4"/>
+                        </svg>
+                        <span>Gainesville Gleam</span>
                     </a>
-                    <p>Professional cleaning services bringing sparkle to Gainesville homes and businesses.</p>
+                    <p>Professional cleaning services bringing clarity and calm to Gainesville homes and businesses.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-services">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Residential Cleaning</li>
-                        <li>Commercial Cleaning</li>
-                        <li>Deep Cleaning</li>
-                        <li>Move In/Out</li>
-                    </ul>
-                </div>
+                <nav class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#testimonials">Reviews</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Residential</li>
+                            <li>Commercial</li>
+                            <li>Deep Clean</li>
+                            <li>Move In/Out</li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Gainesville Gleam. All rights reserved.</p>
