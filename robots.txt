@@ -1,0 +1,12 @@
+# Robots.txt for Gainesville Gleam
+# https://gainesvillegleam.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gainesvillegleam.com/sitemap.xml
+
+# Disallow temporary/system files
+Disallow: /tmpclaude*
+Disallow: /.claude/
