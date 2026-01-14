@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Submit to Formspree
-                const response = await fetch('https://formspree.io/alexanderkenney@gmail.com', {
+                const response = await fetch('https://formspree.io/f/meeeoekj', {
                     method: 'POST',
                     body: formData,
                     headers: {
