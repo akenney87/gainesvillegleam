@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     }, { passive: true });
 
-    // --- Contact Form ---
+    // --- Contact Form (Formspree) ---
     const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
@@ -112,18 +112,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Simulate form submission
+            // Show loading state
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<span>Sending...</span>';
             submitBtn.disabled = true;
 
-            // Simulate API delay
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            try {
+                // Submit to Formspree
+                const response = await fetch('https://formspree.io/alexanderkenney@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
 
-            // Success
-            showNotification('Thank you! We\'ll be in touch within 24 hours.', 'success');
-            contactForm.reset();
+                if (response.ok) {
+                    showNotification('Thank you! We\'ll be in touch within 24 hours.', 'success');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                showNotification('Something went wrong. Please call us instead.', 'error');
+            }
+
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
         });
