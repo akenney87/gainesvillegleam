@@ -137,6 +137,46 @@
     }
     </script>
 
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://gainesvillegleam.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Cleaning Services",
+                "item": "https://gainesvillegleam.com/#services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "About Us",
+                "item": "https://gainesvillegleam.com/#about"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Reviews",
+                "item": "https://gainesvillegleam.com/#testimonials"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Contact",
+                "item": "https://gainesvillegleam.com/#contact"
+            }
+        ]
+    }
+    </script>
+
     <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
@@ -178,6 +218,99 @@
         ]
     }
     </script>
+
+    <!-- Individual Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://gainesvillegleam.com/#residential-cleaning",
+        "name": "Residential House Cleaning in Gainesville, GA",
+        "description": "Weekly, bi-weekly, or monthly house cleaning services in Gainesville and Hall County, GA. Professional home cleaning from routine tidying to comprehensive deep cleans.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://gainesvillegleam.com/#business"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Gainesville",
+            "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "Hall County, Georgia"
+            }
+        },
+        "serviceType": "House Cleaning"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://gainesvillegleam.com/#commercial-cleaning",
+        "name": "Commercial Office Cleaning in Gainesville, GA",
+        "description": "Professional office cleaning and janitorial services for Gainesville businesses. Flexible scheduling around your business hours. Trusted by local offices in Hall County.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://gainesvillegleam.com/#business"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Gainesville",
+            "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "Hall County, Georgia"
+            }
+        },
+        "serviceType": "Commercial Cleaning"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://gainesvillegleam.com/#deep-cleaning",
+        "name": "Deep Cleaning Services in Gainesville, GA",
+        "description": "Top-to-bottom intensive deep cleaning services in Gainesville, GA. Perfect for spring cleaning, post-renovation cleanup, or starting fresh with a spotless home.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://gainesvillegleam.com/#business"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Gainesville",
+            "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "Hall County, Georgia"
+            }
+        },
+        "serviceType": "Deep Cleaning"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://gainesvillegleam.com/#move-cleaning",
+        "name": "Move In/Out Cleaning in Gainesville, GA",
+        "description": "Comprehensive move-out and move-in cleaning services in Gainesville. Leave your old place spotless for the next tenant or start fresh in your new home.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://gainesvillegleam.com/#business"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Gainesville",
+            "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "Hall County, Georgia"
+            }
+        },
+        "serviceType": "Move Out Cleaning"
+    }
+    </script>
 </head>
 <body>
     <!-- Floating Nav -->
@@ -204,6 +337,7 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero -->
     <header class="hero">
         <div class="hero-bg">
@@ -262,11 +396,12 @@
                 <h2>Professional Cleaning Services in Gainesville</h2>
             </header>
             <div class="services-grid">
-                <article class="service-card">
+                <article class="service-card" id="residential-cleaning">
                     <div class="service-number">01</div>
                     <div class="service-content">
                         <h3>Residential Cleaning</h3>
-                        <p>Weekly, bi-weekly, or monthly house cleaning in Gainesville. We handle everything from routine tidying to comprehensive deep cleans.</p>
+                        <p>Weekly, bi-weekly, or monthly house cleaning in Gainesville. We handle everything from routine tidying to comprehensive deep cleans. Serving Hall County and surrounding areas.</p>
+                        <a href="#contact" class="service-link">Get a free quote &rarr;</a>
                     </div>
                     <div class="service-visual">
                         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
@@ -276,11 +411,12 @@
                         </svg>
                     </div>
                 </article>
-                <article class="service-card">
+                <article class="service-card" id="commercial-cleaning">
                     <div class="service-number">02</div>
                     <div class="service-content">
                         <h3>Commercial Cleaning</h3>
-                        <p>Office cleaning and janitorial services for Gainesville businesses. Flexible scheduling around your business hours.</p>
+                        <p>Office cleaning and janitorial services for Gainesville businesses. Flexible scheduling around your business hours. Trusted by local offices in Hall County.</p>
+                        <a href="#contact" class="service-link">Get a free quote &rarr;</a>
                     </div>
                     <div class="service-visual">
                         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
@@ -292,11 +428,12 @@
                         </svg>
                     </div>
                 </article>
-                <article class="service-card">
+                <article class="service-card" id="deep-cleaning">
                     <div class="service-number">03</div>
                     <div class="service-content">
                         <h3>Deep Cleaning Services</h3>
-                        <p>Top-to-bottom intensive cleaning in Gainesville, GA. Perfect for spring cleaning, post-renovation, or a fresh start.</p>
+                        <p>Top-to-bottom intensive cleaning in Gainesville, GA. Perfect for spring cleaning, post-renovation, or a fresh start. <a href="#about">Learn why customers trust us</a>.</p>
+                        <a href="#contact" class="service-link">Get a free quote &rarr;</a>
                     </div>
                     <div class="service-visual">
                         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
@@ -306,11 +443,12 @@
                         </svg>
                     </div>
                 </article>
-                <article class="service-card">
+                <article class="service-card" id="move-cleaning">
                     <div class="service-number">04</div>
                     <div class="service-content">
                         <h3>Move In/Out Cleaning</h3>
-                        <p>Move out cleaning services in Gainesville. Leave your old place spotless or start fresh in your new home.</p>
+                        <p>Move out cleaning services in Gainesville. Leave your old place spotless or start fresh in your new home. <a href="#testimonials">See what property managers say</a>.</p>
+                        <a href="#contact" class="service-link">Get a free quote &rarr;</a>
                     </div>
                     <div class="service-visual">
                         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
@@ -511,6 +649,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -540,10 +679,10 @@
                     <div class="footer-col">
                         <h4>Services</h4>
                         <ul>
-                            <li>Residential</li>
-                            <li>Commercial</li>
-                            <li>Deep Clean</li>
-                            <li>Move In/Out</li>
+                            <li><a href="#residential-cleaning">Residential</a></li>
+                            <li><a href="#commercial-cleaning">Commercial</a></li>
+                            <li><a href="#deep-cleaning">Deep Clean</a></li>
+                            <li><a href="#move-cleaning">Move In/Out</a></li>
                         </ul>
                     </div>
                 </nav>

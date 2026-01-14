@@ -534,6 +534,31 @@ h4 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; font-
     opacity: 1;
 }
 
+.service-link {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    color: var(--sage);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color var(--duration-fast) ease, transform var(--duration-fast) ease;
+}
+
+.service-link:hover {
+    color: var(--charcoal);
+    transform: translateX(4px);
+}
+
+.service-content p a {
+    color: var(--sage);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--duration-fast) ease;
+}
+
+.service-content p a:hover {
+    color: var(--charcoal);
+}
+
 /* --- About --- */
 .about {
     padding: var(--space-3xl) 0;
